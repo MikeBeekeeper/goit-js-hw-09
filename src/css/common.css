@@ -40,14 +40,16 @@ button {
   outline: transparent;
   border: transparent;
   border-radius: 10%;
-  cursor: pointer;
+  
   margin-left: 15px;
 }
 
-button:hover {
-  transform: scale(1.2);
-  background-color: #414141;
-  color: #fafafa;
+
+button:not(:disabled):hover {
+transform: scale(1.2);
+background-color: #414141;
+color: #fafafa;
+cursor: pointer;
 }
 
 input {
